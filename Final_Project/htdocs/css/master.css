@@ -12,3 +12,11 @@
     height: 100%; 
     border: 1px solid black;
 }
+
+.white-square {
+    background-color: #f0d9b5;
+}
+
+.black_square {
+     background-color: #b58863;
+}
