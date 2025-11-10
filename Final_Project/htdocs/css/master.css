@@ -1,11 +1,13 @@
  .chessboard {
+      position:middle;
+      padding:15px;
       display: grid;
       grid-template-columns: repeat(10,1fr);
       width: 640px;
       height: 640px;
-      
       text-align: center;
       margin: auto;
+    
     }
 
 .chess-square {
@@ -38,3 +40,9 @@
      border: 1px solid #90633e;
      
 }  
+
+#sidebar {
+    background-color: red;
+    position:left;
+    width: 250px;
+}
