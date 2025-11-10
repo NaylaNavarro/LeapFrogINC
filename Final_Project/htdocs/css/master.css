@@ -2,6 +2,7 @@
     width:1200px;
  }
  .chessboard {
+      float:right;
       position:middle;
       display: grid;
       grid-template-columns: repeat(10,1fr);
@@ -84,7 +85,7 @@ background-color: #f0d9b5;
 
 #sidebar {
     background-color: red;
-    position:left;
+    float:left;
     width: 250px;
     height:200px;
 }
