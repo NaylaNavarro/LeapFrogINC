@@ -1,6 +1,8 @@
+ #page-container {
+    width:1200px;
+ }
  .chessboard {
       position:middle;
-      padding:15px;
       display: grid;
       grid-template-columns: repeat(10,1fr);
       width: 640px;
@@ -84,4 +86,5 @@ background-color: #f0d9b5;
     background-color: red;
     position:left;
     width: 250px;
+    height:200px;
 }
