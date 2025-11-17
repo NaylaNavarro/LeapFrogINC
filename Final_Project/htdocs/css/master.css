@@ -88,4 +88,17 @@ background-color: #f0d9b5;
     float:left;
     width: 250px;
     height:200px;
+
+}
+*{margin: 0;
+padding: 0;}
+ul {
+
+}
+ul li {
+ list-style: none;
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
 }
