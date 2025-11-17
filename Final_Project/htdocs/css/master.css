@@ -1,10 +1,16 @@
+ #page-container {
+    width:1200px;
+ }
  .chessboard {
+      float:right;
+      position:middle;
       display: grid;
       grid-template-columns: repeat(10,1fr);
       width: 640px;
       height: 640px;
       text-align: center;
       margin: auto;
+    
     }
 
 .chess-square {
@@ -76,3 +82,10 @@ background-color: #f0d9b5;
      border: 1px solid #90633e;
      
 }  
+
+#sidebar {
+    background-color: red;
+    float:left;
+    width: 250px;
+    height:200px;
+}
