@@ -11,29 +11,28 @@
       text-align: center;
       padding-top:60px;
       margin: auto;
-      
     
     }
 
 .chess-square {
     width:  64px;
     height: 64px;
-    border: 1px solid  #000000;
+    /*border: 1px solid  #000000;*/
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     
 }
 
 .white-square {
     background-color: #f0d9b5;
-    border: 1px solid #b58863;
+    border: 1px solid #f0d9b5;
 }
 
 .black_square {
      background-color: #b58863;
-     border: 1px solid  #f0d9b5;
+     border: 1px solid  #b58863;
 }
 
-.a1 {
+/*.a1 {
     background-color: #f0d9b5;
     border: 1px solid #b58863;
     border-top: 1px solid #f0d9b5;
@@ -45,31 +44,31 @@
     border: 1px solid #b58863;
     border-bottom: 1px solid #f0d9b5;
     border-right: 1px solid #f0d9b5;
-}
+}*/
 
-.white-left {
+/*.white-left {
     background-color: #f0d9b5;
     border: 1px solid #b58863;
     border-left: 1px solid #f0d9b5;
-}
+}*/
 
-.white-right {
+/*.white-right {
     background-color: #f0d9b5;
     border: 1px solid #b58863;
     border-right: 1px solid #f0d9b5;
-}
+}*/
 
-.white-top {
+/*.white-top {
     background-color: #f0d9b5;
     border: 1px solid #b58863;
     border-top: 1px solid #f0d9b5;
-}
+}*/
 
-.white-bottom {
-background-color: #f0d9b5;
+/*.white-bottom {
+    background-color: #f0d9b5;
     border: 1px solid #b58863;
     border-bottom: 1px solid #f0d9b5;
-}
+}*/
 
 .border-square {
     display: flex;
@@ -79,7 +78,7 @@ background-color: #f0d9b5;
     height: 64px;
 
      background-color: #90633e;
-     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+     font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif; 
      font-size: 30px;
      border: 1px solid #90633e;
      
