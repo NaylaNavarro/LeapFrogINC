@@ -3,7 +3,7 @@
  }
  .chessboard {
      /* float:right;*/
-      position:middle;
+      position: center;
       display: grid;
       grid-template-columns: repeat(10,1fr);
       width: 640px;
