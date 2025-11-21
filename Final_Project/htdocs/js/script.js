@@ -1,4 +1,7 @@
 const chessSquare = document.getElementById(".chess-square");
 
 const newImage = document.createElement("img");
-newImage.src = "https://static.wikia.nocookie.net/characters/images/f/fa/Michael_Myers.jpg/revision/latest?cb=20160924111808";
+newImage.src = "118 Final Project\LeapFrogINC\Final_Project\htdocs\Images\Chess_bdt60.png";
+document.getElementById(".chess-square").addEventListener("click", function(){
+    this.appendChild(newImage);
+});
