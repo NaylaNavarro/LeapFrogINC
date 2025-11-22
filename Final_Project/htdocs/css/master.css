@@ -29,12 +29,12 @@
 
 .white-square {
     background-color: #f0d9b5;
-    border: 1px solid #f0d9b5;
+    border: solid #f0d9b5;
 }
 
 .black_square {
      background-color: #b58863;
-     border: 1px solid  #b58863;
+     border: solid  #b58863;
 }
 
 /*.a1 {
@@ -85,7 +85,7 @@
      background-color: #90633e;
      font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif; 
      font-size: 30px;
-     border: 1px solid #90633e;
+     border: solid #90633e;
      
 }  
 
