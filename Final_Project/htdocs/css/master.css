@@ -100,7 +100,7 @@
 padding: 0;}
 
 nav {
-  width: 250px;
+  width: 115px;
   height: 100vh;
   background-color: #ff0000; 
   position: fixed;
@@ -110,6 +110,11 @@ nav {
   flex-direction: column;
   padding-top: 30px;
   overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+nav:hover {
+  width: 250px
 }
 
 ul {
