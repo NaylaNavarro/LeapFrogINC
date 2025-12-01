@@ -13,6 +13,7 @@
       width: 660px;
       height: 660px;
       text-align: center;
+      color:#f0d9b5;
       margin:auto;
       box-sizing:border-box;
       padding-top:60px;
@@ -102,7 +103,7 @@ padding: 0;}
 nav {
   width: 115px;
   height: 100vh;
-  background-color: #ff0000; 
+  background-color: #352522; 
   position: fixed;
   top: 0;
   left: 0;
@@ -141,3 +142,4 @@ ul li a:hover {
   background: #ffffff;
   padding-left: 35px;
 }
+
