@@ -105,8 +105,13 @@ nav {
   align-items: center;
   padding-top: 20px;
 }
-
+body {
+  background-color: #339f1b;
+}
 ul {
+  width: 200px;
+  padding: 0;
+  margin: 0;
 
 }
 ul li {
