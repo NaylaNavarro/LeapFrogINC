@@ -1,7 +1,9 @@
-const chessSquare = document.getElementById("chess-square");
+document.addEventListener("DOMContentLoaded", (event) => {
+    const chessSquare = document.getElementById("chess-square");
 
 const newImage = document.createElement("img");
 newImage.src = "Images/Chess_bdt60.png";
-document.querySelector("chess-square").addEventListener("click", function(){
+document.querySelector(".chess-square").addEventListener("click", function() {
     this.appendChild(newImage);
+    });
 });
