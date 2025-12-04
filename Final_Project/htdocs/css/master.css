@@ -5,6 +5,14 @@
    background-repeat: no-repeat;
    height:100vh;
  }
+
+ #menu-page-container {
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+  padding-left:150px;
+  padding-top:20px;
+  
+
+ }
 .chessboard {
      /* float:right;*/
       position: center;
@@ -155,7 +163,7 @@ ul li p {
   color: #ffedcd;
   margin: 0px;
   white-space: nowrap;
-  transition: color 0.3s ease;v
+  transition: color 0.3s ease;
 }
 
 ul li a:hover {
@@ -163,11 +171,12 @@ ul li a:hover {
   padding-left: 35px;
   height: 40%;
   width: 100%;
-
-
 }
 
 ul li a:hover > p {
   color:#39231b;
 }
 
+#header {
+  font-size:45px;
+}
