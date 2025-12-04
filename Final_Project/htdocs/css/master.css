@@ -140,6 +140,7 @@ ul li a {
   padding: 10px 25px;
   text-decoration: none;
   font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  font-size: 25px;
 
   transition: 0.3s ease, padding-left 0.3s ease;
 }
