@@ -1,11 +1,11 @@
- #page-container {
+#page-container {
    background-image:url(../images/wooden-background.jpg);
    background-size:cover;
    background-attachment: fixed;
    background-repeat: no-repeat;
    height:100vh;
  }
- .chessboard {
+.chessboard {
      /* float:right;*/
       position: center;
       display: grid;
@@ -158,7 +158,7 @@ ul li p {
 }
 
 ul li a:hover {
-  background: #ffffff;
+  background: #ffedcd;
   padding-left: 35px;
   height: 40%;
   width: 100%;
