@@ -11,10 +11,11 @@ let board = [
     ["P","P","P","P","P","P","P","P"],  // row 6
     ["R","N","B","K","Q","B","N","R"]   // row 7 (Black back rank)
   ];
-  
-const blackPawn = document.querySelectorAll(".aBPawn");
-blackPawn.forEach((pawn) => {
-    pawn.addEventListener("click", () => {
-        alert("Black Pawn clicked!");
+
+  document.querySelectorAll(".chess-square").forEach(square => {
+    square.addEventListener("click", () => {
+        let row = square.getAttribute("data-row");
+        let col = square.getAttribute("data-col");
+        console.log(`Square clicked: Row ${row}, Column ${col}`);
     });
 });
