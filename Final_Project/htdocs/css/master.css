@@ -184,13 +184,13 @@ ul li a:hover > p {
 #menu-page-container > p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: white;
+    color: #f0d9b5;
     margin-bottom: 15px;
 }
 
 #header {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: white;
+  color: #f0d9b5;
   margin-bottom: 15px;
 }
