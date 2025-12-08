@@ -180,3 +180,17 @@ ul li a:hover > p {
 #header {
   font-size:45px;
 }
+
+#menu-page-container > p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0d9b5;
+    margin-bottom: 15px;
+}
+
+#header {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f0d9b5;
+  margin-bottom: 15px;
+}
