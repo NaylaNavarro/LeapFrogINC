@@ -12,10 +12,43 @@ let board = [
     ["R","N","B","K","Q","B","N","R"]   // row 7 (Black back rank)
   ];
 
-  document.querySelectorAll(".chess-square").forEach(square => {
+//debug function to show coordinates of the square clicked
+document.querySelectorAll(".chess-square").forEach(square => {
     square.addEventListener("click", () => {
         let row = square.getAttribute("data-row");
         let col = square.getAttribute("data-col");
         console.log(`Square clicked: Row ${row}, Column ${col}`);
     });
 });
+
+//movement logic
+let selectedSquare = null;
+let currentPlayer = "white";
+
+document.querySelectorAll(".chess-square").forEach(square => {
+    square.addEventListener("click", () => {
+        let row = parseInt(square.getAttribute("data-row"));
+        let col = parseInt(square.getAttribute("data-col"));
+
+        if(selectedSquare === null){
+            if(board[row][col] !== ""){
+                selectedSquare = {row, col};
+                square.classList.add("selected");
+            }
+        }else{
+            attemptMove(selectedSquare.row, selectedSquare.col, row, col);
+            document.querySelector(".selected")?.classList.remove("selected");
+            selectedSquare = null;
+        }
+    });
+});
+
+function attemptMove(sr, sc, er, ec){
+    const piece = board[sr][sc];
+    if(piece == "") return;
+    //if (!isValidMove(piece, sr, sc, er, ec)) return false;
+
+    board[er][ec] = piece;
+    board[sr][sc] = "";
+    return true;
+}
