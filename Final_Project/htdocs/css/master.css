@@ -10,9 +10,15 @@
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
   padding-left:150px;
   padding-top:20px;
-  
-
  }
+#menu-bg {
+  background-image:url(../images/wooden-background.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height:150vh;
+  }
+
 .chessboard {
      /* float:right;*/
       position: center;
