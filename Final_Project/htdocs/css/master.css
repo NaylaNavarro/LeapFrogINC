@@ -185,11 +185,11 @@ ul li a:hover > p {
 }
 
 #menu-page-container > p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffedcd;
-    margin-bottom: 15px;
-    padding-right: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffedcd;
+  margin-bottom: 15px;
+  padding-right: 20px;
 }
 
 #menu-page-container .rules {
@@ -228,4 +228,8 @@ ul li a:hover > p {
 
 .selected{
   background-color: green;
+}
+
+.bold {
+  font-weight: bold;
 }
