@@ -7,21 +7,35 @@
     <style type="text/css" media="all">@import "css/master.css";</style>
 </head>
 <body>
-    <div id="page-container">
-    <div id="menu-page-container">
-        <div id="header">
-            <h1 class="title">Settings</h1>
-        </div>
+    <div id="menu-bg">
+        <div id="menu-page-container">
+            <div id="header">
+                <h1 class="title">Settings</h1>
+            </div>
 
-        <p class="rules">blah blah blah</p>
-        <br>
-        <p class="rules">blah blah blah</p>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="Images/Back.png" alt="Play Button" /><p>Back</p></a></li>
-                <li><a href="Rules.html"><img src="Images/Rules.png" alt="Rules Button" /><p>Rules</p></a></li>
-            </ul>
-        </nav>
+            <p class="rules">blah blah blah</p>
+            <br>
+            <p class="rules">blah blah blah</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="Images/Back.png" alt="Play Button" /><p>Back</p></a></li>
+                    <li><a href="Rules.html"><img src="Images/Rules.png" alt="Rules Button" /><p>Rules</p></a></li>
+                </ul>
+            </nav>
+           <button onclick="setTheme('classic')">Classic</button>
+           <button onclick="setTheme('dark')">Dark Mode</button>
+           <button onclick="setTheme('green')">Green Mode</button>
+
+            <script>
+            function setTheme(theme) {
+                // Save the theme for all pages
+                localStorage.setItem('boardTheme', theme);
+
+                // Optional: give feedback
+                alert("Theme changed to " + theme);
+            }
+           </script>
+        </div>
     </div>
 </body>
     

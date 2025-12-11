@@ -17,14 +17,14 @@
                   <nav>
                     <ul>
                         <li><a href="Settings.html"><img src="Images/Settings.png" alt="Settings Button"/><p>Settings</p></a></li>
-                        <li><a href="Rules.html"><img src="Images/Rules.png" alt="Rules Button"/><p>Rules</p></a></li> 
+                        <li><a href="Rules.html"><img src="Images/rules.png" alt="Rules Button"/><p>Rules</p></a></li> 
                     </ul>
                   </nav>
               <!--</body>-->
           <!--</h1>-->
        <!-- </div>
     </div>-->
-    <div class="chessboard">
+    <div id="chessboard" class="classic">
         <div class="border-square black_square"id="open"></div>
         <div class="border-square black_square"id="1">1</div>
         <div class="border-square black_square"id="2">2</div>
@@ -37,7 +37,7 @@
         <div class="border-square black_square"id="open"></div>
         <div class="black_square border-square"id="A">A</div>
         <div data-row="0" data-col="0" class="chess-square white-square"id="A1"><img class="piece white rook" src="Images/Chess_rlt60.png"></div>
-        <div data-row="0" data-col="1" class="chess-square black_square"id="A2"><img class="piece white knight" src="Images/Chess_nlt60l.png"></div>
+        <div data-row="0" data-col="1" class="chess-square black_square"id="A2"><img class="piece white knight" src="Images/Chess_nlt60.png"></div>
         <div data-row="0" data-col="2" class="chess-square white-square white-top"id="A3"><img class="piece white bishop" src="Images/Chess_blt60.png"></div>
         <div data-row="0" data-col="3" class="chess-square black_square"id="A4"><img class="piece white king" src="Images/Chess_klt60.png"></div>
         <div data-row="0" data-col="4" class="chess-square white-square white-top"id="A5"><img class="piece white queen" src="Images/Chess_qlt60.png"></div>
@@ -107,7 +107,7 @@
         <div class="border-square black_square"id="G">G</div>
         <div class="border-square black_square"id="H">H</div>
         <div data-row="7" data-col="0" class="chess-square black_square"id="H1"><img class="piece black rook" src="Images/Chess_rdt60.png"></div>
-        <div data-row="7" data-col="1" class="chess-square white-square"id="H2"><img class="piece black knight" src="Images/Chess_ndt60l.png"></div>
+        <div data-row="7" data-col="1" class="chess-square white-square"id="H2"><img class="piece black knight" src="Images/Chess_ndt60.png"></div>
         <div data-row="7" data-col="2" class="chess-square black_square"id="H3"><img class="piece black bishop" src="Images/Chess_bdt60.png"></div>
         <div data-row="7" data-col="3" class="chess-square white-square white-bottom"id="H4"><img class="piece black king" src="Images/Chess_kdt60.png"></div>
         <div data-row="7" data-col="4" class="chess-square black_square"id="H5"><img class="piece black queen" src="Images/Chess_qdt60.png"></div>
@@ -126,8 +126,19 @@
         <div class="border-square black_square"id="8">8</div>
         <div class="border-square black_square"id="open"></div>
     </div>
+</div>
   </div>
-  <script src="js/script.js"></script>
+  <script>
+  window.onload = function () {
+      const savedTheme = localStorage.getItem('boardTheme');
+
+      if (savedTheme) {
+          const board = document.getElementById("chessboard");
+          board.className = savedTheme;  // Apply theme
+      }
+  };
+  </script>
+<script src="js/script.js"></script>
 </body>
 </html>
 
