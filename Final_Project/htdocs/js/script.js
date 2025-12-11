@@ -53,5 +53,12 @@ function attemptMove(sr, sc, er, ec){
 }
 
 function renderBoard(){
-
+    for(i=0; i<7; i++){
+        let col=i;
+        for(i=0; i<7; i++){
+            let row = i;
+            let square = board[row][col];
+            console.log(square);
+        }
+    }
 }
