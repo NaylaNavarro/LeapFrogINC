@@ -81,7 +81,7 @@
 .dark {
 --light-square: #6f6f6f;
 --dark-square:  #3c3e45;
---border-square: #18161b;  
+--border-square: #18161b;
 }
 
 .green {
@@ -220,40 +220,18 @@ ul li a:hover > p {
   background-color: green;
 }
 
-/*.a1 {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-top: 1px solid #f0d9b5;
-    border-left: 1px solid #f0d9b5;
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 9px black);
+
 }
 
-.h8 {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-bottom: 1px solid #f0d9b5;
-    border-right: 1px solid #f0d9b5;
-}*/
-
-/*.white-left {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-left: 1px solid #f0d9b5;
-}*/
-
-/*.white-right {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-right: 1px solid #f0d9b5;
-}*/
-
-/*.white-top {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-top: 1px solid #f0d9b5;
-}*/
-
-/*.white-bottom {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-bottom: 1px solid #f0d9b5;
-}*/
+.video-container iframe {
+  position: absolute;
+  padding-top: 15px;
+  top: 0;
+  left: 0;
+}
