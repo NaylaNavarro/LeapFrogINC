@@ -69,6 +69,9 @@ function renderBoard(){
             console.log(arraySpace);
             let selector = `div[data-col="${col}"][data-row="${row}"]`;
             let square = document.querySelector(selector);
+            if(arraySpace == ""){
+                square.innerHTML = "";
+            }
             if(arraySpace == "r"){
                 square.innerHTML = `<img src = "Images/Chess_rlt60.png">`;
             }
