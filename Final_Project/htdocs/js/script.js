@@ -32,7 +32,6 @@ document.querySelectorAll(".chess-square").forEach(square => {
 
 //movement logic
 let selectedSquare = null;
-let currentPlayer = "white";
 
 document.querySelectorAll(".chess-square").forEach(square => {
     square.addEventListener("click", () => {
@@ -58,9 +57,57 @@ function attemptMove(sr, sc, er, ec){
 
     board[er][ec] = piece;
     board[sr][sc] = "";
+    let selector = `div[data-col="${sc}"][data-row="${sr}"]`;
+    console.log(board);
     renderBoard();
 }
 
 function renderBoard(){
-
+        for(row=0; row<8; row++){
+        for(col=0; col<8; col++){
+            let arraySpace = board[row][col];
+            console.log(arraySpace);
+            let selector = `div[data-col="${col}"][data-row="${row}"]`;
+            let square = document.querySelector(selector);
+            if(arraySpace == ""){
+                square.innerHTML = "";
+            }
+            if(arraySpace == "r"){
+                square.innerHTML = `<img src = "Images/Chess_rlt60.png">`;
+            }
+            if(arraySpace == "R"){
+                square.innerHTML = `<img src = "Images/Chess_rdt60.png">`;
+            }
+            if(arraySpace == "n"){
+                square.innerHTML = `<img src = "Images/Chess_nlt60.png">`;
+            }
+            if(arraySpace == "N"){
+                square.innerHTML = `<img src = "Images/Chess_ndt60.png">`;
+            }
+            if(arraySpace == "b"){
+                square.innerHTML = `<img src = "Images/Chess_blt60.png">`;
+            }
+            if(arraySpace == "B"){
+                square.innerHTML = `<img src = "Images/Chess_bdt60.png">`;
+            }
+            if(arraySpace == "q"){
+                square.innerHTML = `<img src = "Images/Chess_qlt60.png">`;
+            }
+            if(arraySpace == "Q"){
+                square.innerHTML = `<img src = "Images/Chess_qdt60.png">`;
+            }
+            if(arraySpace == "k"){
+                square.innerHTML = `<img src = "Images/Chess_klt60.png">`;
+            }
+            if(arraySpace == "K"){
+                square.innerHTML = `<img src = "Images/Chess_kdt60.png">`;
+            }
+            if(arraySpace == "p"){
+                square.innerHTML = `<img src = "Images/Chess_plt60.png">`;
+            }
+            if(arraySpace == "P"){
+                square.innerHTML = `<img src = "Images/Chess_pdt60.png">`;
+            }
+        }
+    }
 }
