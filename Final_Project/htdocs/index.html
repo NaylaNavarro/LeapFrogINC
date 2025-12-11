@@ -17,14 +17,14 @@
                   <nav>
                     <ul>
                         <li><a href="Settings.html"><img src="Images/Settings.png" alt="Settings Button"/><p>Settings</p></a></li>
-                        <li><a href="Rules.html"><img src="Images/Rules.png" alt="Rules Button"/><p>Rules</p></a></li> 
+                        <li><a href="Rules.html"><img src="Images/rules.png" alt="Rules Button"/><p>Rules</p></a></li> 
                     </ul>
                   </nav>
               <!--</body>-->
           <!--</h1>-->
        <!-- </div>
     </div>-->
-    <div class="chessboard">
+    <div id="chessboard" class="classic">
         <div class="border-square black_square"id="open"></div>
         <div class="border-square black_square"id="1">1</div>
         <div class="border-square black_square"id="2">2</div>
@@ -126,8 +126,19 @@
         <div class="border-square black_square"id="8">8</div>
         <div class="border-square black_square"id="open"></div>
     </div>
+</div>
   </div>
-  <script src="js/script.js"></script>
+  <script>
+  window.onload = function () {
+      const savedTheme = localStorage.getItem('boardTheme');
+
+      if (savedTheme) {
+          const board = document.getElementById("chessboard");
+          board.className = savedTheme;  // Apply theme
+      }
+  };
+  </script>
+<script src="js/script.js"></script>
 </body>
 </html>
 

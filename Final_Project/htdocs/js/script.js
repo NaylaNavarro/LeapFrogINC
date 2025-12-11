@@ -1,3 +1,12 @@
+function setTheme(classic) {
+    localStorage.setItem("classic", themeName);
+}
+function setTheme(dark) {
+    localStorage.setItem("dark", themeName);
+}
+function setTheme(green) {
+    localStorage.setItem("green", themeName);
+}
 // 8 rows, 8 columns
 //uppercase = black pieces
 //lowercase = white pieces
@@ -52,3 +61,5 @@ function attemptMove(sr, sc, er, ec){
     board[sr][sc] = "";
     return true;
 }
+
+

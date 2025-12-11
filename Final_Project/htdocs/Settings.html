@@ -22,6 +22,20 @@
                     <li><a href="Rules.html"><img src="Images/Rules.png" alt="Rules Button" /><p>Rules</p></a></li>
                 </ul>
             </nav>
+           <button onclick="setTheme('classic')">Classic</button>
+           <button onclick="setTheme('dark')">Dark Mode</button>
+           <button onclick="setTheme('green')">Green Mode</button>
+
+            <script>
+            function setTheme(theme) {
+                // Save the theme for all pages
+                localStorage.setItem('boardTheme', theme);
+
+                // Optional: give feedback
+                alert("Theme changed to " + theme);
+            }
+           </script>
+        </div>
     </div>
 </body>
     
