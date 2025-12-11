@@ -81,7 +81,7 @@
 .dark {
 --light-square: #6f6f6f;
 --dark-square:  #3c3e45;
---border-square: #18161b;  
+--border-square: #18161b;
 }
 
 .green {
@@ -219,41 +219,3 @@ ul li a:hover > p {
 .selected{
   background-color: green;
 }
-
-/*.a1 {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-top: 1px solid #f0d9b5;
-    border-left: 1px solid #f0d9b5;
-}
-
-.h8 {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-bottom: 1px solid #f0d9b5;
-    border-right: 1px solid #f0d9b5;
-}*/
-
-/*.white-left {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-left: 1px solid #f0d9b5;
-}*/
-
-/*.white-right {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-right: 1px solid #f0d9b5;
-}*/
-
-/*.white-top {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-top: 1px solid #f0d9b5;
-}*/
-
-/*.white-bottom {
-    background-color: #f0d9b5;
-    border: 1px solid #b58863;
-    border-bottom: 1px solid #f0d9b5;
-}*/
