@@ -217,13 +217,13 @@ ul li a:hover > p {
 }
 
 .theme-options img {
-display: auto;
-width: 20rem;
-height: 20rem;
+display: flex;
+width: 20.5rem;
+height: 20.5rem;
 justify-content: center;
 align-items: center;
 cursor: pointer;
-
+background-color: #3d241b;
 padding: 2rem;
 margin: -0.15rem;
 }
