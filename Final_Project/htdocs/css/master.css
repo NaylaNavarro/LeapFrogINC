@@ -220,6 +220,18 @@ ul li a:hover > p {
   background-color: green;
 }
 
+.theme-options img {
+display: auto;
+width: 20rem;
+height: 20rem;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+padding: 2rem;
+margin: -0.15rem;
+}
+
 /*.a1 {
     background-color: #f0d9b5;
     border: 1px solid #b58863;
