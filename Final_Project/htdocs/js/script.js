@@ -62,12 +62,15 @@ function attemptMove(sr, sc, er, ec){
 }
 
 function renderBoard(){
-        for(i=0; i<7; i++){
-        let col=i;
-        for(i=0; i<7; i++){
-            let row = i;
-            let square = board[row][col];
-            console.log(square);
+        for(row=0; row<8; row++){
+        for(col=0; col<8; col++){
+            let arraySpace = board[row][col];
+            console.log(arraySpace);
+            let selector = `div[data-col="${col}"][data-row="${row}"]`;
+            let square = document.querySelector(selector);
+            if(arraySpace == "r"){
+                square.innerHTML = "jjjjjjjjj";
+            }
         }
     }
 }
