@@ -1,42 +1,46 @@
 #page-container {
-   background-image:url(../Images/wooden-background.jpg);
-   background-size:cover;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   min-height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+  background-image:url(../Images/wooden-background.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height:100vh;
  }
 
  #menu-page-container {
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
-  padding-left:150px;
-  padding-top:20px;
+  padding-left:9.375rem;
+  padding-top:1.25rem;
  }
+
 #menu-bg {
   background-image:url(../Images/wooden-background.jpg);
   background-size:cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  min-height:150vh;
+  min-height:125vh;
   }
 
 #chessboard {
-     /* float:right;*/
-      position: center;
-      display: grid;
-      grid-template-columns: repeat(10,1fr);
-      width: 660px;
-      height: 660px;
-      text-align: center;
-      color:#f0d9b5;
-      margin:auto;
-      box-sizing:border-box;
-      padding-top:60px;
-      filter: drop-shadow(0px 0px 50px black);
-    }
+    /* float:right;*/ 
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 43vw;
+    height: 100%;
+    aspect-ratio:1/1;
+
+    text-align: center;
+    color:#f0d9b5;
+    margin:auto;
+    box-sizing:border-box;
+    filter: drop-shadow(0px 0px 50px black);
+  }
 
 .chess-square {
-    width:  64px;
-    height: 64px;
+    aspect-ratio:1/1;
     /*border: 1px solid  #000000;*/
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     
@@ -59,17 +63,16 @@
 }
 
 .border-square {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
 
-     background-color: var(--border-square);
-     font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif; 
-     font-size: 30px;
-     border: solid var(--border-square);
-     
+  background-color: var(--border-square);
+  font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif; 
+  font-size: 1.875rem;
+  border: solid var(--border-square);
+  
 }  
 
 .classic {
@@ -89,18 +92,12 @@
 --dark-square:  #667758;
 --border-square: #2d512f; 
 }
-#sidebar {
-    background-color: red;
-    float:left;
-    width: 250px;
-    height:200px;
 
-}
 *{margin: 0;
 padding: 0;}
 
 nav {
-  width: 110px;
+  width: 6.875rem;
   height: 100vh;
   background-color: #3d241b; 
   position: fixed;
@@ -108,7 +105,6 @@ nav {
   left: 0;
   display: flex;
   flex-direction: column;
-  /*padding-top: 30px;*/
   overflow: hidden;
   transition: width 0.3s ease;
   filter: drop-shadow(0px 0px 10px black);
@@ -116,12 +112,12 @@ nav {
 }
 
 nav:hover {
-  width: 250px;
+  width: 15.625rem;
 }
 
 ul {
-  width: 200px;
-  padding-top: 30px;
+  width: 12.5rem;
+  padding-top: 1.875rem;
   margin: 0;
 
 }
@@ -135,13 +131,13 @@ ul li {
 ul li a {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 2.1875rem;
   width: 100%;
   height: auto;
-  padding: 10px 25px;
+  padding: .625rem 1.5625rem;
   text-decoration: none;
   font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
 
   transition: 0.3s ease, padding-left 0.3s ease;
 }
@@ -175,7 +171,7 @@ ul li a:hover > p {
 }
 
 #menu-page-container > p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   color: #ffedcd;
   margin-bottom: 15px;
@@ -183,29 +179,29 @@ ul li a:hover > p {
 }
 
 #menu-page-container .rules {
-  font-size: 18px;
-  text-shadow: 2px 2px 6px black;
+  font-size: 1.125rem;
+  text-shadow: .125rem .125rem .125rem black;
   letter-spacing:.05rem
 }
 
 #menu-page-container .rule-title {
   font-weight: bold;
-  font-size: 25px;
-  text-shadow: 2px 2px 6px black;
+  font-size: 1.5625rem;
+  text-shadow: .125rem .125rem .375rem black;
   letter-spacing: .05rem;
 }
 
 #menu-page-container .note {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
-  text-shadow: 2px 2px 6px black;
+  text-shadow: .125rem .125rem .375rem black;
   letter-spacing: .01rem;
 }
 
 #menu-page-container .title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
-  text-shadow: 2px 2px 6px black;
+  text-shadow: .125rem .125rem .375rem black;
   letter-spacing: .1rem;
 }
 
