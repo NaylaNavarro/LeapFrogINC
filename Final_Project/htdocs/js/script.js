@@ -46,9 +46,12 @@ document.querySelectorAll(".chess-square").forEach(square => {
 function attemptMove(sr, sc, er, ec){
     const piece = board[sr][sc];
     if(piece == "") return;
-    //if (!isValidMove(piece, sr, sc, er, ec)) return false;
 
     board[er][ec] = piece;
     board[sr][sc] = "";
-    return true;
+    renderBoard();
+}
+
+function renderBoard(){
+
 }
