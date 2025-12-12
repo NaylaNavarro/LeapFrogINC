@@ -203,11 +203,17 @@ ul li a:hover > p {
   letter-spacing:.05rem
 }
 
-#menu-page-container .rule-title {
+.rule-title {
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+  padding-left:5vh;
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.5625rem;
   text-shadow: .125rem .125rem .375rem black;
-  letter-spacing: .05rem;
+  color: #ffedcd;
+  letter-spacing: .01rem;
+  word-spacing: .1rem;
+  padding-left:2vh;
+  padding-top:45%;
 }
 
 .note {
@@ -274,7 +280,8 @@ ul li a:hover > p {
   height: auto;
   aspect-ratio: 16/9;
   float:right;
-  padding-top:55%;
+  margin:5px;
+  padding-top:10%;
   padding-left:9.375rem;
   padding-bottom: 40.25%;
   overflow: visible;
@@ -349,6 +356,10 @@ img {
 
     #menu-page-container2 {
     padding-top:25%;
+    }
+
+    .rule-title{
+      padding:0;
     }
     }
 
