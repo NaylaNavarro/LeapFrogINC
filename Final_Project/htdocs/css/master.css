@@ -328,10 +328,10 @@ img {
     }
 
     #chessboard {
-      width: 80vw;        /* Nearly full width on mobile */
+      width: 80vw;        
       max-width: 80vw;
       aspect-ratio: 1/1;
-      padding-top:20;
+      padding-top:20%;
     }
 
     .chess-square{
