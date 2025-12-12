@@ -342,7 +342,7 @@ img {
       width: 80vw;        
       max-width: 80vw;
       aspect-ratio: 1/1;
-      padding-top:20%;
+      padding-top:5%;
     }
 
     .chess-square{
@@ -367,8 +367,13 @@ img {
       align-items:center;
     }
 
-    #menu-page-container2 {
+    #menu-page-container {
     padding-top:25%;
+    padding-left:0;
+    }
+
+    #menu-page-container2 {
+    padding-top:27%;
     padding-left:0;
     }
 
