@@ -46,6 +46,7 @@
   height: auto;  
   aspect-ratio:1/1;
   position:relative;
+  box-sizing: border-box;
 
   text-align: center;
   color:#f0d9b5;
@@ -330,17 +331,15 @@ img {
     #chessboard {
       width: 80vw;        
       max-width: 80vw;
-      aspect-ratio: 1/1;
-      padding-top:20%;
     }
 
-    .chess-square{
-        aspect-ratio: 1/1;
+    /*.chess-square{
+        
     }
     .border-square{
-      aspect-ratio: 1/1;
+     
       
-    }
+    }*/
 
    #menu-bg {
         display: flex;               
