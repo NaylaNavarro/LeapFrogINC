@@ -317,25 +317,19 @@ img {
     }
 
     #chessboard {
-        width: 80%;
-        height: 80%;
-        margin: 0%;
-        padding: 0%;
+      width: 70vw;          
         display: grid;
-        aspect-ratio: auto;
-        padding-left: 0%;
-        margin-left: 0%;
+        grid-template-columns: repeat(10, 1fr);
+        aspect-ratio: 1 / 1; 
+        margin: 0 auto;
     }
 
     .chess-square{
         aspect-ratio: 1/1;
-        width: auto;
-        height: auto;
     }
     .border-square{
       aspect-ratio: 1/1;
-      width: auto;
-      height: auto;
+      
     }
 
    #menu-bg {
