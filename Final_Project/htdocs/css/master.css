@@ -12,16 +12,16 @@
 
  #menu-page-container {
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
-  padding-left:5vh;
   padding-top:1.25rem;
   width:50vw;
+  padding-left:5vh;
+  
  }
 
  #menu-page-container2 {
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
-  padding-left:5vh;
   padding-top:1.25rem;
-  width:auto;
+  padding-left:100px;
  }
 
 #menu-bg {
@@ -181,9 +181,6 @@ ul li a:hover > p {
   color:#39231b;
 }
 
-#header {
-  font-size:45px;
-}
 
 #menu-page-container > p {
   font-size: 1rem;
@@ -193,7 +190,7 @@ ul li a:hover > p {
   padding-right: 40px;
 }
 
-#menu-page-container .rules {
+.rules {
   font-size: 1.125rem;
   text-shadow: .125rem .125rem .125rem black;
   letter-spacing:.05rem
@@ -219,7 +216,6 @@ ul li a:hover > p {
   text-shadow: .125rem .125rem .375rem black;
   letter-spacing: .01rem;
   word-spacing: .1rem;
-  padding-left:5vh;
 }
 
 #menu-page-container .title {
@@ -231,11 +227,14 @@ ul li a:hover > p {
 }
 
 #header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: .125rem .125rem .375rem black;
+  letter-spacing: .1rem;
   font-size: 1.2rem;
   line-height: 1.6;
   color: #ffedcd;
   margin-bottom: 15px;
-  padding-left:5vh;
 }
 
 
@@ -272,7 +271,6 @@ ul li a:hover > p {
   display: flex;
   gap: 1rem;
   justify-content: auto;
-  margin-left: .7rem;
 }
 
 .video-container iframe{
@@ -356,6 +354,7 @@ img {
 
     #menu-page-container2 {
     padding-top:25%;
+    padding-left:0;
     }
 
     .rule-title{
