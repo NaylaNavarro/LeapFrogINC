@@ -42,6 +42,7 @@
   display: grid;
   grid-template-columns: repeat(10,1fr);
   width:min(60vw, 600px);
+  margin:0 auto;
   height: auto;
   aspect-ratio:1/1;
 
@@ -317,11 +318,10 @@ img {
     }
 
     #chessboard {
-      width: 70vw;          
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        aspect-ratio: 1 / 1; 
-        margin: 0 auto;
+      width: 80vw;        /* Nearly full width on mobile */
+      max-width: 80vw;
+      aspect-ratio: 1/1;
+      padding-top:20;
     }
 
     .chess-square{
