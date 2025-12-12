@@ -39,38 +39,35 @@
   }
 
 #chessboard {
-    /* float:right;*/ 
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    width:min(60vw, 600px);
-    height: auto;
-    aspect-ratio:1/1;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  width:min(60vw, 600px);
+  height: auto;
+  aspect-ratio:1/1;
 
-    text-align: center;
-    color:#f0d9b5;
-    margin:auto;
-    box-sizing:border-box;
-    filter: drop-shadow(0px 0px 50px black);
-  }
+  text-align: center;
+  color:#f0d9b5;
+  margin:auto;
+  box-sizing:border-box;
+  filter: drop-shadow(0px 0px 50px black);
+}
 
 .chess-square {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio:1/1;
-    /*border: 1px solid  #000000;*/
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio:1/1;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
 
 .white-square {
-    background-color: var(--light-square);
-    border: solid var(--light-square);
+  background-color: var(--light-square);
+  border: solid var(--light-square);
 }
 
 .black_square {
-     background-color: var(--dark-square);
-     border: solid  var(--dark-square);
+  background-color: var(--dark-square);
+  border: solid  var(--dark-square);
 }
 
 :root {
@@ -186,7 +183,6 @@ ul li a:hover > p {
 
 #header {
   font-size:45px;
-  padding-left:5vh;
 }
 
 #menu-page-container > p {
@@ -231,6 +227,7 @@ ul li a:hover > p {
   font-weight: bold;
   text-shadow: .125rem .125rem .375rem black;
   letter-spacing: .1rem;
+  
 }
 
 #header {
@@ -238,7 +235,10 @@ ul li a:hover > p {
   line-height: 1.6;
   color: #ffedcd;
   margin-bottom: 15px;
+  padding-left:5vh;
 }
+
+
 
 .selected{
   background-color: green;
