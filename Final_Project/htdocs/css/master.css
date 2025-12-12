@@ -347,10 +347,31 @@ img {
       align-items:center;
     }
 
-   .menu-page-container {
-    width:60vw;
+    #menu-page-container2 {
+    padding-top:25%;
+    }
+    }
+
+@media(max-width: 1450px){   
+    .themes {
+    flex-direction: column; 
+    align-items: center;    
+    gap: 1rem;               
+    margin-left: 0;
+    }
+
+    .theme-options {
+        width: 120px;          
+        height: auto;          
+        padding: 0.5rem;        
+    }
+
+    .theme-options {
+        width: 120px;            
+        height: auto;           
+        padding: 0.5rem;        
+    }
    }
-}
 
 html, body {
     overflow-x: hidden;
