@@ -46,7 +46,6 @@
   height: auto;  
   aspect-ratio:1/1;
   position:relative;
-  box-sizing: border-box;
 
   text-align: center;
   color:#f0d9b5;
@@ -298,6 +297,17 @@ ul li a:hover > p {
   filter: drop-shadow(0px 0px 9px black);
 }
 
+.chess-square > img,
+.border-square > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -331,27 +341,17 @@ img {
     #chessboard {
       width: 80vw;        
       max-width: 80vw;
+      aspect-ratio: 1/1;
+      padding-top:20%;
     }
 
-    }
-
-.chess-square > img,
-.border-square > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: contain;
-}
-    /*.chess-square{
-        
+    .chess-square{
+        aspect-ratio: 1/1;
     }
     .border-square{
-     
+      aspect-ratio: 1/1;
       
-    }*/
+    }
 
    #menu-bg {
         display: flex;               
